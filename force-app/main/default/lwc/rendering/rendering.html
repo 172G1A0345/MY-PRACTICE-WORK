@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Rendering using for:True && for:false" icon-name="custom:custom12">
+        <ul class="slds-var-m-around_medium">
+            <button class="slds-button slds-button_success" onclick={ShowText}>Dispaly hidden Text</button>
+            <template if:true={showtext}>
+                <h4>Welcome to The Conditional Rendering</h4>
+            </template>
+            <button class="slds-button slds-button_success" onclick={HideText}> Hide Current Text</button>
+            <template if:false={hideText}>
+                <h5>Hide Text</h5>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

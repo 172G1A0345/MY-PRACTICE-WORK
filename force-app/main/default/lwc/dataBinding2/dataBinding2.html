@@ -1,0 +1,21 @@
+<template>
+    <lightning-card titel="two way binding" icon-name="custom:custom34">
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+                type="text"
+                name="fullName"
+                label="Entor Ur name:"
+                onkeyup={changeHandler}
+                value="fullName"
+            ></lightning-input>
+            <lightning-input
+                type="text"
+                name="title"
+                label="Entor Ur title:"
+                onkeyup={changeHandler}
+                value="title"
+            ></lightning-input>
+            <p>My Name Is {fullName} and My Domine Is {title}</p>
+        </div>
+    </lightning-card>
+</template>
